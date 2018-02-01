@@ -14,7 +14,7 @@ const listHotels = async ({ id, name, stars }) => {
         const hotels = await Hotel.find(query).exec().then((hotel) => {
             if (hotel) {
                 return hotel
-            }
+            }   
 
             return []
         })
